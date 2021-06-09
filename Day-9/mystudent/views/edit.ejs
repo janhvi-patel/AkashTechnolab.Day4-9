@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>Add Record</h1>
+        <a href="/display2">Display</a>
+        <form method="POST" action="edd-process">
+
+            Enrolment  : <input type="text" name="txt1" value="<%= db_rows_array[0].enrolment %>" required>
+            Name  : <input type="text" name="txt2" value="<%= db_rows_array[0].name %>" required>
+            Number  : <input type="text" name="txt3" value="<%= db_rows_array[0].number %>" required>
+            Email  : <input type="text" name="txt4" value="<%= db_rows_array[0].email %>" required>
+            Clg  : <input type="text" name="txt5" value="<%= db_rows_array[0].clg %>" required>
+            <input  type="submit"/>
+
+        </form>
+    </body>
+</html>
+
+
+

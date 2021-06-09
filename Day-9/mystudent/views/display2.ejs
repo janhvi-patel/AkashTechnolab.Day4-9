@@ -1,0 +1,33 @@
+<a href="/edd">Add Record</a>
+
+<% if(db_rows_array.length > 0){ %>
+
+Add Recordes
+        
+       <% }else{ %>
+             No Records Found
+            <% } %>
+
+
+     <table border="3px solid black">
+         <tr>
+             <th>Id</th>
+             <th>Enrolment</th>
+             <th>Name</th>
+             <th>Number</th>
+             <th>Email</th>
+             <th>Clg</th>
+         </tr>
+
+         <% for(var i=0;i<db_rows_array.length;i++){ %>
+            <tr>
+            <td><%= db_rows_array[i].id %></td>
+            <td><%= db_rows_array[i].enrolment %></td>
+            <td><%= db_rows_array[i].name %></td>
+            <td><%= db_rows_array[i].number %></td>
+            <td><%= db_rows_array[i].email %></td>
+            <td><%= db_rows_array[i].clg %></td>
+            <td><a href='/edit/<%= db_rows_array[i].id %>'>Edit </a> | <a href='/delete/<%= db_rows_array[i].id %>'>Delete</a></td>
+        </tr>
+        <%}%>
+     </table>
