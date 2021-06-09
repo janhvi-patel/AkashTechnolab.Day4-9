@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <style>
+            .container {
+                border: 3px solid black;
+                padding: 5px 20px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 14px;
+                height: 300px;
+                width: 400px;
+                box-shadow: 5px 4px 13px rgb(43, 87, 87);
+            }
+    
+            .rf {
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                box-shadow: 5px 2px 12px rgb(42, 22, 46);
+                width: 400px;
+                display: block;
+                margin: 20px 15px;
+                
+    
+            }
+        </style>
+          <h3 class="rf">Contact Us</h3>
+
+       
+            <div class="container">
+
+
+                <form method="POST" action="form-process">
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                        <td><input type="text" id="name" name="name"  placeholder="Enter Name" required></td>
+                    </tr>
+        
+                    <br>
+                   <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email" name="email" placeholder="abcd@gmail.com" pattern=".+@gmail\.com" required></td>
+                
+                   </tr>
+                       
+                    
+                    <br>
+                    <tr>
+                    <td>Age:</td>
+                        <td><input type="number" id="age" name="age" min="10" max="80" placeholder="30"></td>
+                    </tr>
+        
+                    <br>
+                    <tr>
+
+                        <td>M.No:</td>
+                        <td> <input type="text" id="mno" name="mno" placeholder="1234567892" required></td>
+                    </tr>
+                    <br>
+        
+                    
+                    <td><button type="submit" class="btn btn-default">Submit</button></td>
+                    <td><button type="re" class="btn btn-default">Reset</button></td>
+                </table>
+                </form>
+            </div>
+            </body>
+</html>
